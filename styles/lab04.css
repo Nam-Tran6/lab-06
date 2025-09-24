@@ -20,7 +20,7 @@ h1 { /*Applies to h1*/
 
 * { /*Applies to all classes*/
     font-family: calibri, sans-serif; /*Changes all(*) to Calibri*/
-    color: #2f4f4f
+    color: black
 }
 
 h2 { /*Applies to h2*/
