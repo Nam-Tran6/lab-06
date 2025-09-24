@@ -1,0 +1,37 @@
+/*
+
+filename: dl.css
+
+author: Kha Nam Tran
+
+created: 28/08/2025
+
+last modified: 11/09/2025
+
+description: lab05.html with external CSS
+
+*/
+
+dl {
+  border: 3px double #ccc;
+  padding: 0.5em; /* makes dl have double border with padding*/
+}
+  
+dt {
+  clear: left; /* any element left should not appear*/
+	float: left; /* aligns dt the left*/ 
+  width: 40%; /* width is 40%*/
+	text-align: right; /* aligns text to the right*/
+  font-weight: bold; /* makes font bold*/
+  color: green; /* adds colour*/
+}
+  
+dt::after {
+  content: " :"; /*adds a : after dt*/
+}
+
+dd {
+  width: 55%; /*takes 55% of the total width*/
+	margin-left: 42%; /*push description next to terms*/
+}
+

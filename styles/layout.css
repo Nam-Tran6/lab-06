@@ -1,0 +1,106 @@
+/*
+
+filename: layout
+
+author: Kha Nam Tran
+
+created: 11/09/2025
+
+last modified: 11/09/2025
+
+description: layout for lab05
+
+*/
+
+aside:hover {
+    display:block /* Negates the display:hidden in lab04*/
+}
+
+/* I really ought to change the lab04 to lab05 but the instructions say otherwise ¯\_(ツ)_/¯*/
+
+.menu {
+    display: inline-block; /* Uses inline outline to horizontally make blocks (pls allow me to use flexbox)*/
+}
+
+aside {
+    border: 4px inset purple; /* 4 pixel purple border with shading enabled*/
+    border-radius: 14px; /* rounds off the rectangle*/
+    margin: 1em; /* outside of box*/
+    padding: 1em; /* inside of box*/
+    width: 30%; /* changes the aside shrinks and expands*/
+    background: url(images/fade.jpg) repeat-x top left; /* adds fade image on top left from top left 
+    replicating horizontally*/
+    float: right;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+header {
+    border: 1px solid black;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: lightgrey;
+    text-align: center; /* border on header*/
+}
+
+footer {
+    border-top: 4px double green; /* line break on footer*/
+    clear:both;
+}
+
+
+#lists {
+    float: left; /* all id=lists aligns left*/
+}
+
+table {
+    margin: auto; /* aligns to the center when horizontally moving*/
+}
+
+#tables {
+    float: right;
+    margin: auto; /* aligns to the right when horizontally moving*/
+}
+
+#hyperlinks {
+    clear:left;
+    float:left; /* id=hyperlinks moves left*/
+}
+
+#images {
+    float:right; /*alrigns right*/
+}
+
+figure {
+    border: 2px solid #ccc; /* adds border to figure*/
+}
+
+#lists, #images, #tables, #hyperlinks {
+    width: 50%;
+    text-align:center; /* assigns width to 50% and aligns center*/
+}
+
+ol, ul, dl {
+    text-align: left; /* aligns order list, unorder list, and data list to align left*/
+}
+
+article {
+    min-width: 30em; /* minimum width to perserve legibility*/
+}
+
+footer p {
+    display:inline-block;
+    width: 33% /* sets width to 33% and makes all p's horizontal*/
+}
+
+footer p:first-child {
+    float:left; /* sets first child to float left*/
+}
+
+footer p:nth-child(2) {
+    text-align: center /* sets second p to float middle*/
+}
+
+footer p:last-child {
+    float:right;
+    text-align:right; /* floats right and text-align right*/
+}
